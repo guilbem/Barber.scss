@@ -4,52 +4,314 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="author" content="Guilherme Guimarães">
+    <meta name="description" content="melhores barbearias, barbearia confiaveis, barbearia próximas a mim, barbearias mais bem avaliadas">
+    <meta name="keywords" content="barbearia, barbeiro, cortes de cabelos, cortes de barba, corte masculino, corte infantil, corte feminino, corte de idosos"> 
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css"/>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>Divino Barbearia</title>
+
+            <title>Divino Barbearia</title>
+
+
 </head>
 <body>
-<! -- Header -->
-<div class="bg-home">
-    <header>
-        <nav class="header-content container">
-            <div class="header-icons">
-                <a href="#">
-                    <i class="fa-brands fa-instagram fa-2x" ></i>
-                </a>
+
+
+    <!-- header - tela inicial -->
+    <div class="bg-home" id="home" >
+        <header>
+            <nav class="header-content container" ></nav>
+
+                <ul class="header-menu"  data-aos="fade-up" data-aos-delay="300"  data-aos="flip-up"  data-aos-duration="2200">
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#equipe">Equipe</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                </ul>
+
+
+                <div class="header-icons" data-aos="fade-down">
+
+                    <a href="https://www.instagram.com/divino_barbearia?igsh=cDM4YnF0Z3VxOWk="  target="_blank"  >
+                        <i class="fa-brands fa-instagram fa-2x" /></i>  
+                    </a>
+                    
+                    <a href="#"  target="_blank" >
+                        <i class="fa-brands fa-facebook fa-2x" ></i>
+                    </a>
+
+                    <a href="#"  target="_blank" >
+                        <i class="fa-brands fa-tiktok fa-2x" ></i>
+                    </a>
+
+                </div>
+
+
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300" >
+                    <img                      
+                        src="assets/logo-barbearia_sf.png"
+                        alt="Logo da barbearia"
+
+                         data-aos="flip-up"
+                         data-aos-delay="300"
+                         data-aos-duration="2200"
+
+                        />
+                </div>
+
+            </nav>
+
+
+         <!-- hero mensagem inicial e botao de agentamento central-->
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+
+                <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E PERSONALIDADE.</h1>
+                    <p>Horário de Funcionamento: 09:00hrs ás 20:00hrs</p>
+
+                        <a href="https://api.whatsapp.com/send?phone=556193799508&text=Opa%2C%20quero%20marcar%20um%20hor%C3%A1rio!&fbclid=PAT01DUAON_-1leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadaZbCkf2wBloqHDOLt6BUZPx4YtpRQQ0QO8qNVshjBTofpEjJlQsG8byLjUw_aem_Y8OjyoYfAxZoCkvOXzS0ew" 
+                            class="button-contact"
+                            target="_blank" >
+                            Agendar Horário
+                        </a>
+            </main>       
+
+        </header>
+
+    </div>
+
+
+    <!-- sessao - about - SOBRE -->
+    <section class="about" id="about">
+
+            <div class="container about-content" >
+
+                    <div data-aos="zoom-in" data-aos-delay="100">
+                        <img
+                            src="assets/images.svg"
+                            alt="Imagem sobre a barbearia"
+                            />
+                    </div>
+
+
+            <div class="about-description" data-aos="zoom-out-left"  data-aos-delay="250">
+                   <h2>Sobre</h2>
+                   <p>A Barbearia Nº 1 da cidade!  O melhor estilo de Cortes, Barbas e muito mais, você encontra só aqui! <br/>Estamos há mais de 10 anos garantido o estilo, a mordenização e o bem-estar de nossos clientes.</p>
+                   <p>Horário de Funcionamento: <strong>09:00hrs</strong> ás <strong>20:00hrs</strong></p>
+            </div>    
+
+        </div>
+    </section>
+
+
+
+    <!-- sesssao - services - SERVICOS-->
+    <section class="services" id="services">
+        
+            <div class="services-content container">
+                <h2>Serviços</h2>
+                <p>Oferecemos serviços de cortes de cabelos, barbas, sombracelhas e alisamentos.<br/>Deste a estilos de cortes comuns até cortes mordemos. Seguimos atendento todo o público, infatil, masculino, feminino e idoso.</p>
+            </div>
+
+
+            <section class="haircuts">
+
+                    <div class="haircut" data-aos="fade-up" data-aos-delay="150" >
+                            <img
+                                src="assets/c1-barber.jpeg"
+                                alt="Corte Normal "
+                                />
+
+                                <div class="haircut-info">
+                                    <strong>Corte Normal</strong>
+                                    <button> R$ 40,00 </button>
+
+                                </div>
+
+                    </div>
+
+
+
+                    <div class="haircut" data-aos="fade-up" data-aos-delay="250" >
+                            <img
+                                src="assets/c2-barber.jpeg"
+                                alt="Corte degrade"
+                                />
+
+                                <div class="haircut-info">
+                                    <strong>Corte Degradê</strong>
+                                    <button> R$ 45,00 </button>
+
+                                </div>
+
+                    </div>
+
+
+
+                    <div class="haircut" data-aos="fade-up" data-aos-delay="400" >
+                            <img
+                                src="assets/c3-barber.jpeg"
+                                alt="Barba Completa"
+                                />
+
+                                <div class="haircut-info">
+                                    <strong>Barba Completa</strong>
+                                    <button> R$ 75,00 </button>
+
+                                </div>
+                                
+                    </div>
                 
-                 <a href="#">
-                    <i class="fa-brands fa-facebook fa-2x" ></i>
-                </a>
+         </section>    
+    </section>
 
-                 <a href="#">
-                    <i class="fa-brands fa-tiktok fa-2x" ></i>
-                </a>
+
+
+     <!-- sessao - equipe - EQUIPE DE BARBEIROS -->
+     <section class="equipe" id="equipe">
+
+            <div class="equipe-content container">
+                 <h2>Equipe de Barbeiros</h2>
+                 <p>Temos uma equipe de barbeiros profissionais e experientes. Todos bem capacidados e pronto para atender você e a sanar demais dúvidas e sugestões.</p>
             </div>
 
-            <div class="header-logo" >
-                <img
-                src="assets/logo-barbearia.png"
-                alt="Logo da barbearia"
-                />
+            <section class="barbeiros">
+
+                    <div class="barbeiro" data-aos="fade-up" data-aos-delay="200" >
+                            <img
+                                src="assets/micael-barber.jpeg"
+                                alt=" barbeiro micael "
+                                />
+                                
+                            <div class="barbeiro-info">
+                                <strong>Barbeiro - Micael</strong>
+
+                                <button>
+                                <a href="https://www.instagram.com/micaellferreira_?igsh=MTRpeHNlajhhcGdhaQ=="  target="_blank" >
+                                        <i class="fa-brands fa-instagram fa-2x" /></i>
+                                    </a>
+                                </button>
+
+                            </div>
+
+                   </div>
+
+
+
+                    <div class="barbeiro" data-aos="fade-up" data-aos-delay="250" >
+                            <img
+                                src="assets/eduardo-barber.jpeg"
+                                alt=" barbeiro eduardo"
+                                />
+
+                                <div class="barbeiro-info">
+                                    <strong>Barbeiro - Eduardo</strong>
+
+                                    <button>
+                                    <a href="https://www.instagram.com/dudu_.barber_?igsh=MTl3bTA3bmMxeXl0ZA=="  target="_blank" >
+                                            <i class="fa-brands fa-instagram fa-2x" /></i>
+                                        </a>
+                                    </button>
+
+                                </div>
+
+                    </div>
+
+
+
+                    <div class="barbeiro" data-aos="fade-up" data-aos-delay="400" >
+                            <img
+                                src="assets/jesse-barber.jpeg"
+                                alt=" barbeiro jesse"
+                                />
+
+                                <div class="barbeiro-info">
+                                    <strong>Barbeiro - Jessé</strong>
+
+                                    <button>
+                                        <a href="https://www.instagram.com/alves_barbe?igsh=MXBqNmVidDd2Nzdnag=="  target="_blank" >
+                                            <i class="fa-brands fa-instagram fa-2x" /></i>
+                                        </a>
+                                    </button>
+
+                                </div>
+
+                    </div>
+                
+         </section>
+    </section>
+
+
+
+<!-- sessao - localizacao - VENHA CONHECER --> 
+        <div class="services" id="localizacao">
+            <h2>Venha Conhecer!</h2>
+        </div>
+
+            <iframe
+            width="100%"  
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1224.7740887687185!2d-48.26207224227257!3d-15.742453107754717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb9af500d0a09%3A0xc8e654516512b2ef!2sDivino%20barbearia!5e0!3m2!1spt-BR!2sbr!4v1763773963183!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+<!-- footer - Rodape --> 
+    <footer class="footer">
+            <div class="footer-icons">
+
+                    <a href="https://www.instagram.com/divino_barbearia?igsh=cDM4YnF0Z3VxOWk="  target="_blank"  >
+                        <i class="fa-brands fa-instagram fa-2x" /></i>
+                    </a>
+                        
+                    <a href="#"  target="_blank" >
+                        <i class="fa-brands fa-facebook fa-2x" ></i>
+                    </a>
+
+                    <a href="#"  target="_blank" >
+                        <i class="fa-brands fa-tiktok fa-2x" ></i>
+                    </a>
+
             </div>
 
-            <div>
-                <a class="header-button" href="#">
-                 Agendar Horário
-                </a>
+
+
+            <div class="footer-logo">
+                    <img 
+                        src="assets/logo-barbearia_sf.png" 
+                        alt="logo da barbearia" />
             </div>
 
-        </nav>
 
-    </header>
+        <p>Copyright 2025 | Guilherme Guimarães - Todos direitos reservados.</p>
 
-</div>
+    </footer>
+
+
+
+    <!-- button fixo de whatsaap-->
+        <a 
+            href="https://api.whatsapp.com/send?phone=556193799508&text=Opa%2C%20quero%20marcar%20um%20hor%C3%A1rio!&fbclid=PAT01DUAON_-1leHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAadaZbCkf2wBloqHDOLt6BUZPx4YtpRQQ0QO8qNVshjBTofpEjJlQsG8byLjUw_aem_Y8OjyoYfAxZoCkvOXzS0ew"
+            class="btn-whatsapp"
+            target="_blank"
+
+            data-aos="zoom-in-up" data-aos-delay="400"
+            >
+
+            <img src="assets/whatssapp.svg" alt="botao whatsapp"/>
+            <span class="tooltip-text">Agende seu Horário!!!</span>
+        </a>
+
+    <!-- fim button fixo de whatsaap-->
+
+    <script src="script.js"></script>  
+
 
 </body>
 </html>

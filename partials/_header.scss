@@ -7,8 +7,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 0;
 }
 
+//icones de redes sociais
 i {
     color:$white-normal;
 }
@@ -16,7 +18,10 @@ i {
 .header-icons{
     display: flex;
     gap: 14px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
+
 
 .header-icons a:hover{
     i{
@@ -34,3 +39,100 @@ i {
         transform: translateY(-8px) scale(1.1);
     }
 }
+
+//fim de icones de redes sociais
+
+
+//barra de menu
+.header-menu {
+  display: flex;
+  gap: 24px; 
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 40px;
+
+  
+  li a {
+    color: $white-normal;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    display: inline-block;
+  }
+
+  
+  li a:hover {
+    animation: translateY 0.8s infinite alternate;
+    color: $red-light;
+  }
+}
+
+
+.header-menu a:hover{
+    i{
+        animation: translateY 0.8s infinite alternate;
+        color: $red-light
+    }
+}
+
+
+@keyframes translateY {
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+//fim de barra de menu
+
+
+//imagem da Logo da barbearia 
+.header-logo img {
+  max-width: 230px;
+}
+
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+// fim imagem da Logo da barbearia 
+
+
+//responsividade mobile 768px
+@media screen and (max-width:768px) {
+    .header-content{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+
+        
+    .header-menu{
+        margin-top: 16px;
+        font-size: 34px;
+
+    }
+    
+    i{
+        margin-top: 16px;
+        font-size: 34px;
+    }
+
+    }
+
+    .header-logo img{
+        width: 160px;
+        margin-top: 46px;
+    }
+     
+}
+
+//fim responsividade mobile 768px
